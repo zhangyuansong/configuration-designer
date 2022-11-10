@@ -1,0 +1,21 @@
+# EditorConfig 有助于跨不同编辑器或 IDE 统一编码风格配置文件。
+# 编辑器或 IDE ，可使其 够读取文件配置格式，并遵循定义的样式。
+# EditorConfig 文件 一般命名为：.editorconfig， 保存到项目根目录。
+# 打开文件时，EditorConfig插件将查找名为.editorconfig的文件，在打开的文件的目录和每个父目录中。寻找.editorconfig，
+# 如果到达根文件或使用EditorConfig文件root=true被发现了，则停止向上查找。
+
+
+# 表示是最顶层的 EditorConfig 配置文件
+root = true
+
+[*] # 表示所有文件适用
+charset = utf-8 # 设置文件字符集为 utf-8
+indent_style = space # 缩进风格（tab | space）
+indent_size = 2 # 缩进大小
+end_of_line = lf # 控制换行类型(lf | cr | crlf)
+trim_trailing_whitespace = true # 去除行首的任意空白字符
+insert_final_newline = true # 始终在文件末尾插入一个新行
+
+[*.md] # 表示仅 md 文件适用以下规则
+max_line_length = off
+trim_trailing_whitespace = false
